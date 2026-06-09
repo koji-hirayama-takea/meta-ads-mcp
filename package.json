@@ -1,0 +1,27 @@
+{
+  "name": "meta-ads-mcp",
+  "version": "0.1.0",
+  "description": "Self-built MCP server for the Meta (Facebook) Marketing API. Operate your own ad account from Claude Code without per-seat SaaS fees.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "bin": {
+    "meta-ads-mcp": "./bin/run.sh"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
